@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../dist/output.css">
+  <title>Newsletter</title>
+</head>
+
+<body class="font-principal wrapper  md:wrap">
+  <section class="absolute">
+    <div id="suscripcion"
+      class="hidden md:pt-12 md:m-32 border-2 mt-32 p-8 bg-white w-[400px] h-[450px]  items-center rounded-md">
+      <img src="../assets/images/icon-success.svg">
+      <h1 class="text-dark-Slate-Grey font-principal font-bold text-4xl pt-10"> Thanks for subscribing!</h1>
+      <p id="final" class="text-sm  text-dark-Slate-Grey m-2"> </p>
+      <button id="botonAlerta" class="bg-dark-Slate-Grey text-white font-bold text-lg 
+      cursor-pointer mt-5 w-80 h-16 rounded-md hover:bg-tomato hover:shadow-xl"> Dismiss message</button>
+    </div>
+  </section>
+
+  <section class="md:flex flex-row-reverse">
+    <img class="mt-3 w-full md:hidden" src="../assets/images/illustration-sign-up-mobile.svg">
+    <img class="hidden md:block md:py-7" src='../assets/images/illustration-sign-up-desktop.svg'>
+
+    <div>
+      <h1 class="text-dark-Slate-Grey font-principal font-bold text-5xl pt-10"> Stay Updated!</h1>
+
+      <h2 class="font-principal font-bold text-dark-Slate-Grey text-lg pt-7"> Join 60.000+ product managers receiving
+        monthly updates on:</h2>
+
+      <ul class="pt-5">
+        <li class="iconos ml-7">
+          <p class="text-xl font-bold text-dark-Slate-Grey m-2"> Product discovery and building what matters </p>
+        </li>
+        <li class="iconos ml-7">
+          <p class="text-xl font-bold text-dark-Slate-Grey m-2">Measuring to ensure updates are a success </p>
+        </li>
+        <li class="iconos ml-7 ">
+          <p class="text-xl font-bold text-dark-Slate-Grey m-2">And much more!</p>
+        </li>
+      </ul>
+      <div class="flex justify-between items-center w-96">
+        <h4 class="pt-5 text-dark-Slate-Grey font-bold ml-3 mb-3"> Email address</h4>
+        <h3 id="error" class="text-tomato hidden"> Valid email required </h3>
+      </div>
+
+      <nav>
+        <input type="email" id="Email" placeholder="email@company.com"
+          class="w-96 h-14 p-4 rounded-md border-solid border-2 border-gray-300 ml-2">
+        <label id="campo" for="Email"></label>
+        <button id="botonEnviar"
+          class="bg-dark-Slate-Grey hover:bg-tomato hover:shadow-xl text-white font-bold text-lg cursor-pointer mt-5 w-96 h-16 rounded-md">
+          Subscribe to monthly newsletter</button>
+      </nav>
+    </div>
+  </section>
+
+  <script src="alerta.js"></script>
+
+</body>
+
+</html>
